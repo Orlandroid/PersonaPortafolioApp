@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">PersonalPortafolioApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="nombre">Gudalupe Orlando Lopez Diaz</string>
+    <string name="about_me">
+        Dessarrolador Android (java/kotlin) me gusta muhco la programacion
+        y en especial enfocado a aplicaciones moviles cotinuo aprendiento
+        nuevas cosas.
+    </string>
 </resources>
