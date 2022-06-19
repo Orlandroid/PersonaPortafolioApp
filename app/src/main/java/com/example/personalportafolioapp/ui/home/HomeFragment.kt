@@ -25,10 +25,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
     }
 
     private fun getRandomAnimation():Int{
-        return when((1..4).random()){
-            1 -> R.raw.android_move
-            2 -> R.raw.android_logo
-            3 -> R.raw.android_studio_new_logo
+        return when((1..3).random()){
+            1 -> R.raw.android_logo
+            2 -> R.raw.android_studio_new_logo
             else -> R.raw.kotlin_android
         }
     }
