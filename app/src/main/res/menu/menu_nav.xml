@@ -8,7 +8,7 @@
         android:id="@+id/projectsFragment"
         android:title="Proyectos" />
     <item
-        android:id="@+id/cuatro"
+        android:id="@+id/skillsFragment"
         android:title="Skills" />
     <item
         android:id="@+id/cinco"

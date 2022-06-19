@@ -14,4 +14,9 @@
         android:id="@+id/projectsFragment"
         android:name="com.example.personalportafolioapp.ui.projects.ProjectsFragment"
         android:label="ProjectsFragment" />
+    <fragment
+        tools:layout="@layout/fragment_skills"
+        android:id="@+id/skillsFragment"
+        android:name="com.example.personalportafolioapp.ui.skills.SkillsFragment"
+        android:label="SkillsFragment" />
 </navigation>

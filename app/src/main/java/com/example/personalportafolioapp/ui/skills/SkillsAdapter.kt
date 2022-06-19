@@ -1,32 +1,38 @@
 package com.example.personalportafolioapp.ui.skills
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.personalportafolioapp.R
+import com.example.personalportafolioapp.databinding.ItemRowBinding
 
-class SkillsAdapter(private val dataSet: Array<String>) :
+class SkillsAdapter() :
     RecyclerView.Adapter<SkillsAdapter.ViewHolder>() {
 
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        fun bind() {
+    private var listaSkils: List<String> = arrayListOf()
 
+    fun setData(lista: ArrayList<String>) {
+        listaSkils = lista
+        notifyDataSetChanged()
+    }
+
+
+    class ViewHolder(private val binding: ItemRowBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(skill:String) {
+            binding.textView.text=skill
         }
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.item_card_text, viewGroup, false)
-
-        return ViewHolder(view)
+        val layoutInflater = LayoutInflater.from(viewGroup.context)
+        val binding = ItemRowBinding.inflate(layoutInflater,viewGroup,false)
+        return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        viewHolder.bind()
+        viewHolder.bind(listaSkils[position])
     }
 
-    override fun getItemCount() = dataSet.size
+    override fun getItemCount() = listaSkils.size
 
 }
