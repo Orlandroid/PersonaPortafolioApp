@@ -22,4 +22,11 @@ abstract class BaseFragment<ViewBinding:ViewDataBinding>(@LayoutRes protected va
         return binding.root
     }
 
+    protected abstract fun setUpUi()
+
+    open fun observerViewModel() {
+
+    }
+
+
 }

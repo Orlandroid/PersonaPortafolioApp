@@ -9,7 +9,8 @@ import com.example.personalportafolioapp.ui.base.BaseFragment
 
 class SkillsFragment : BaseFragment<FragmentSkillsBinding>(R.layout.fragment_skills) {
 
-    private val adapter by lazy {
+    //shif+f6
+    private val skillsAdapter by lazy {
         SkillsAdapter()
     }
 
@@ -18,10 +19,10 @@ class SkillsFragment : BaseFragment<FragmentSkillsBinding>(R.layout.fragment_ski
         setUpUi()
     }
 
-    private fun setUpUi() {
+    override fun setUpUi() {
         with(binding) {
-            recycler.adapter = adapter
-            adapter.setData(getSkil())
+            recycler.adapter = skillsAdapter
+            skillsAdapter.setData(getSkil())
         }
     }
 
