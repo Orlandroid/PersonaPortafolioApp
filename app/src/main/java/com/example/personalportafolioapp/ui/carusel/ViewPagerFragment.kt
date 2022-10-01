@@ -18,7 +18,26 @@ class ViewPagerFragment :
     override fun setUpUi() {
         with(binding) {
             viewPager.adapter = PageAdapter(this@ViewPagerFragment)
+            viewPager.isUserInputEnabled = false
+            buttonNext.setOnClickListener {
+                goToNextStep()
+            }
         }
     }
+
+
+    private fun goToNextStep() {
+        with(binding) {
+            when (viewPager.currentItem) {
+                0 -> {
+                    viewPager.currentItem = 1
+                }
+                1 -> {
+                    viewPager.currentItem = 2
+                }
+            }
+        }
+    }
+
 
 }

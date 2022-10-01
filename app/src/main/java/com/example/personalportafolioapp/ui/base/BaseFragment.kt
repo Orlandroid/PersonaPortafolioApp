@@ -9,7 +9,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 
-abstract class BaseFragment<ViewBinding:ViewDataBinding>(@LayoutRes protected val contentLayoutId : Int) : Fragment() {
+abstract class BaseFragment<ViewBinding : ViewDataBinding>(@LayoutRes protected val contentLayoutId: Int) :
+    Fragment() {
 
     protected lateinit var binding: ViewBinding
 
@@ -24,9 +25,6 @@ abstract class BaseFragment<ViewBinding:ViewDataBinding>(@LayoutRes protected va
 
     protected abstract fun setUpUi()
 
-    open fun observerViewModel() {
-
-    }
-
+    open fun observerViewModel() {}
 
 }

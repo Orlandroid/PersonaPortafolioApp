@@ -17,7 +17,9 @@ class AboutMeFragment : BaseFragment<FragmentAbouMeBinding>(R.layout.fragment_ab
     }
 
     override fun setUpUi() {
-
+        binding.apply {
+            imageHello.setAnimation(R.raw.indicius_sticker_helloworld)
+        }
     }
 
 }
