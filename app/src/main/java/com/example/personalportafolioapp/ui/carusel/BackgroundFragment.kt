@@ -15,7 +15,9 @@ class BackgroundFragment : BaseFragment<FragmentBackgroundBinding>(R.layout.frag
     }
 
     override fun setUpUi() {
-
+        with(binding) {
+            image.setAnimation(R.raw.development)
+        }
     }
 
 }
