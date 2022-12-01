@@ -8,6 +8,7 @@
         android:layout_height="match_parent"
         tools:context=".ui.carusel.AboutMeFragment">
 
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/image_hello"
             android:layout_width="0dp"
@@ -16,13 +17,13 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/aboutme"
-            app:lottie_loop="true"
             app:layout_constraintBottom_toTopOf="@+id/imageView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:lottie_autoPlay="true" />
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -48,6 +49,7 @@
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
+            android:fontFamily="@font/diplomata"
             app:layout_constraintBottom_toTopOf="@+id/textView6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -61,9 +63,11 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="24dp"
+            android:fontFamily="@font/singleday"
+            android:gravity="center"
             android:text="@string/desarrollador_android_me_gusta_mucho_la_programacion_y_en_especial_para_aplicaciones_moviles_continuo_aprendiendo_constantemente"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="26sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

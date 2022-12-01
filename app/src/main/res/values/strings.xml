@@ -17,4 +17,8 @@
         Desarrollo / Mantenimiento de aplicaciones Android Nativas (Basadas en clean arquitecture /MVVM) usando java ,kotlin.
         He participado en migracion de proyectos de java a kotlin.
     </string>
+    <string name="who_i_am">Me gusta mucho la programacion en especial me gusta mucho programar aplicaciones moviles
+    trabajo en proyectos personales y siempre estoy aprendiendo nuevas cosas , trato de
+    mejorar mis habilidades cada dia.</string>
+    <string name="quien_soy">Quien soy</string>
 </resources>
